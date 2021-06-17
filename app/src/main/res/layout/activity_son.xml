@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Son">
+
+    <TextView
+        android:id="@+id/endText"
+        android:layout_width="217dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginBottom="107dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="Oyun bitdi!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="256dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+        android:text="Sizin Xalınız:\n0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endText" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="168dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="#1abc9c"
+        android:onClick="gohome"
+        android:padding="10dp"
+        android:text="Ana səhifəyə\n qayıt"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
